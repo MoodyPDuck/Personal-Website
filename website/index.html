@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css"> <!--Links the CSS file-->
+    <style>
+        /* Creates a style specific for this page*/
+        .content {
+            width: 80%; /*Width increase*/
+            margin: auto; /* Center*/
+            text-align: justify;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px; 
+        }
+
+        .image-container img {
+            max-width: 100%; 
+            height: auto; 
+            margin-bottom: 10px; 
+        }
+
+        .content p {
+            margin-bottom: 20px; 
+        }
+    </style>
+    <script src="script.js" defer></script> <!--Link to the JS file-->
+    <script>
+        //Toggle Dark mode
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Personal Website</h1>
+        <nav>
+            <ul> <!--Links to the different pages-->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hobby1.html">Reading</a></li>
+                <li><a href="hobby2.html">Video Games</a></li>
+                <li><a href="hobby3.html">Computers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="toggleDarkMode">Toggle Dark Mode</button> <!--Button for dark mode-->
+    </header>
+
+    <div class="content">
+        <h2>About Me</h2>
+        <p>Welcome to my personal website!</p>
+        <p> Here you can learn 
+            more about me, my many hobbies/interests, 
+            and how to get in touch. My name is Richard and
+        I am a computer science major in my 3rd year of school.
+    As you can see from this site, I have decided to put 3 of my hobbies as well
+as my contact info, I hope you enjoy learning about me.</p>
+        <div class="image-container">
+            <img src="me.JPG" alt="About Me" id="about-me-img" width="1000">
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; Richard Duran</p>
+    </footer>
+</body>
+</html>
